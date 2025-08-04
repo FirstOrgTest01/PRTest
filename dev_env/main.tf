@@ -4,3 +4,8 @@ module "resource_group" {
   resource_group_name     = "rg-todo-app"
   resource_group_location = "Central India"
 }
+module "resource_group" {
+  source                  = "../module/azuerm_resouce_group"
+  resource_group_name     = "rg-todo-app1"
+  resource_group_location = "West US"
+}
